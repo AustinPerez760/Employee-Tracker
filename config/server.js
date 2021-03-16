@@ -4,6 +4,7 @@ const consoleTable = require("console.table");
 
 const connection = mysql.createConnection({
   host: "localhost",
+  port: 3306,
   user: "root",
   password: "Sap92010",
   database: "employee_DB",
@@ -72,7 +73,7 @@ function addDepartment() {
     })
     .then(function (res) {
       const department = res.department;
-      const quesry = `INSERT INTO department (name) VALUES("${department}")`;
+      const query = `INSERT INTO department (name) VALUES("${department}")`;
       connection.query(query, function (err, res) {
         if (err) throw err;
         console.table(res);
@@ -142,7 +143,7 @@ function addEmployee() {
       const lastName = res.lastName;
       const roleID = res.roleID;
       const managerID = res.managerID;
-      const query = `INERT INTO employee (first_name,last_name,role_if,manager_id) VALUE("${firstName}","${lastName}","${roleID}","${managerID}")`;
+      const query = `INSERT INTO employee (first_name,last_name,role_id,manager_id) VALUE("${firstName}","${lastName}","${roleID}","${managerID}")`;
       connection.query(query, function (err, res) {
         if (err) throw err;
         console.table(res);
