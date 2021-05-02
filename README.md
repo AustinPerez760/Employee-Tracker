@@ -22,13 +22,13 @@
 
 ## Description
 
-Manage and keep track of all your employees using my Emplyee Tracker apllication! This application allows you to add new employees within a current database and also allows for users to update or manage employee information.
+Manage and keep track of all your employees using my Employee Tracker apllication! This application allows you to add new employees within a current database and also allows for users to update or manage employee information.
 <br>
 
 ## Instalation
 
 <br>
-This is a CLI specific application and will require users to use an CLI of choice. 
+This is a CLI specific application and will require users to use a CLI of choice. 
 <br>
 <br>
 Users should make sure that Node.js and MySQL are installed on their local machines. Your personal MySQL password must also be entered into the connection.js file in order to create the necessary database and connection within MySQL. Preset or fill data is supplied within the seeds.sql file.
@@ -44,7 +44,7 @@ Users should make sure that Node.js and MySQL are installed on their local machi
 
 - Within the terminal cd into the config folder and run npm server to launch the application.
   <br>
-- Once application is running you will be presented with a series of prompts to follow. use arrow keys to navigate through prompts. Prompts will consist of adding, viewing, or updating employee information. Use the enter key to select an option.
+- Once application is running you will be presented with a series of prompts to follow. use arrow keys to navigate through the prompts. Prompts will consist of adding, viewing, or updating employee information. Use the enter key to select an option.
   <br>
 - Information that the user enters in regards to updating, viewing, or managing employees and job related roles is organized within a table.
   <br>
